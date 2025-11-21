@@ -51,7 +51,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="dich-vu" className="py-8 sm:py-12 md:py-16 bg-gray-50 relative">
+    <section
+      id="dich-vu"
+      className="py-8 sm:py-12 md:py-16 bg-gray-50 relative"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="grid grid-cols-8 gap-4 h-full">
@@ -65,7 +68,9 @@ export default function Services() {
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12">
           <div className="inline-block bg-gradient-to-r from-yellow-500 via-yellow-300 to-white text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md mb-4 shadow-lg">
-            <span className="text-xs sm:text-sm font-bold drop-shadow-md">Our Service</span>
+            <span className="text-xs sm:text-sm font-bold drop-shadow-md">
+              Dịch vụ
+            </span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 px-4">
             LĨNH VỰC HOẠT ĐỘNG CỦA CHÚNG TÔI
@@ -98,7 +103,7 @@ export default function Services() {
                 <p className="text-white/90 text-xs mb-3 line-clamp-2 min-h-[2.5rem]">
                   {service.description}
                 </p>
-                
+
                 {/* View Details - Hidden by default, shown on hover */}
                 <a
                   href={`#${service.id}`}

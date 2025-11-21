@@ -28,7 +28,9 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12">
           <div className="inline-block bg-gradient-to-r from-yellow-500 via-yellow-300 to-white text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md mb-4 shadow-lg">
-            <span className="text-xs sm:text-sm font-bold drop-shadow-md">Projects</span>
+            <span className="text-xs sm:text-sm font-bold drop-shadow-md">
+              Dự án
+            </span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 px-4">
             DỰ ÁN ĐÃ THỰC HIỆN
