@@ -69,7 +69,7 @@ export default function Services() {
         <div className="text-center mb-8 sm:mb-12">
           <div className="inline-block bg-gradient-to-r from-yellow-500 via-yellow-300 to-white text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md mb-4 shadow-lg">
             <span className="text-xs sm:text-sm font-bold drop-shadow-md">
-              Dịch vụ
+              Dịch Vụ
             </span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 px-4">
@@ -100,7 +100,7 @@ export default function Services() {
                 <h3 className="text-base font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300 line-clamp-2 min-h-[2.5rem]">
                   {service.title}
                 </h3>
-                <p className="text-white/90 text-xs mb-3 line-clamp-2 min-h-[2.5rem]">
+                <p className="text-white/90 text-xs mb-3 line-clamp-2">
                   {service.description}
                 </p>
 
