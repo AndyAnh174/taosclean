@@ -5,7 +5,7 @@ const projects = [
     title: "Dịch vụ vệ sinh văn phòng",
     category: "Dự án",
     imageSize: "300x300",
-    image: "/assets/duan/duan0.jpg",
+    image: "/assets/duan/duan0_new.jpg",
   },
   {
     title: "Dịch vụ chăm sóc hoa viên, cây cảnh",
