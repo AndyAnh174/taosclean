@@ -1,42 +1,38 @@
 import { MetadataRoute } from 'next'
 
+const baseUrl = 'https://taosclean.vercel.app'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://yourdomain.com',
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://yourdomain.com#gioi-thieu',
+      url: `${baseUrl}/#gioi-thieu`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://yourdomain.com#dich-vu',
+      url: `${baseUrl}/#dich-vu`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: 'https://yourdomain.com#du-an',
+      url: `${baseUrl}/#du-an`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: 'https://yourdomain.com#tin-tuc',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://yourdomain.com#lien-he',
+      url: `${baseUrl}/#lien-he`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.7,
     },
   ]
 }

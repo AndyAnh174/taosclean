@@ -18,6 +18,6 @@ export default function Home() {
       <Projects />
       <Footer />
       <SocialIcons />
-    </main>
+      </main>
   );
 }
