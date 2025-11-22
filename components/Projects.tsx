@@ -1,23 +1,29 @@
+import Image from "next/image";
+
 const projects = [
   {
     title: "Dịch vụ vệ sinh văn phòng",
     category: "Dự án",
     imageSize: "300x300",
+    image: "/assets/duan/duan0.jpg",
   },
   {
     title: "Dịch vụ chăm sóc hoa viên, cây cảnh",
     category: "Dự án",
     imageSize: "300x300",
+    image: "/assets/duan/duan1.jpg",
   },
   {
     title: "Vệ sinh công nghiệp",
     category: "Dự án",
     imageSize: "300x300",
+    image: "/assets/duan/duan2.jpg",
   },
   {
-    title: "Dự án 2",
+    title: "Tháo dỡ",
     category: "Dự án",
     imageSize: "300x300",
+    image: "/assets/duan/duan3.jpg",
   },
 ];
 
@@ -44,12 +50,16 @@ export default function Projects() {
               key={index}
               className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Project Image - Placeholder */}
+              {/* Project Image */}
               <div className="relative w-full h-64 bg-gray-300 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <p className="text-xs font-semibold">{project.title}</p>
-                  <p className="text-xs">{project.imageSize}</p>
-                </div>
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                  sizes="300px"
+                  priority={index === 0}
+                />
               </div>
 
               {/* Overlay */}
@@ -61,13 +71,6 @@ export default function Projects() {
                   <h3 className="text-lg font-bold">{project.title}</h3>
                 </div>
               </div>
-
-              {/* Navigation Arrow (for last item) */}
-              {index === projects.length - 1 && (
-                <div className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 rounded-full w-8 h-8 flex items-center justify-center text-white transition-colors">
-                  <span>→</span>
-                </div>
-              )}
             </div>
           ))}
         </div>
@@ -75,4 +78,3 @@ export default function Projects() {
     </section>
   );
 }
-
