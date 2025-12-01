@@ -40,7 +40,7 @@ export default function Header() {
             <div className="flex items-center gap-2">
               <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-500" />
               <span className="hidden lg:inline">
-                61/2 Đường số 2, Khu phố 30, Phường Hiệp Bình, TP Hồ Chí Minh
+                477/75A Nơ Trang Long, Phường Bình Lợi Trung, TP Hồ Chí Minh
               </span>
               <span className="lg:hidden">TP Hồ Chí Minh</span>
             </div>
@@ -57,13 +57,13 @@ export default function Header() {
               <Image
                 src="/assets/logo.png"
                 alt="Logo Kim Ngọc"
-                width={40}
-                height={40}
-                className="object-contain w-10 h-10 sm:w-12 sm:h-12"
+                width={56}
+                height={56}
+                className="object-contain w-14 h-14 sm:w-16 sm:h-16"
                 priority
               />
-              <span className="text-lg sm:text-xl font-bold text-gray-900">
-                KIM NGỌC
+              <span className="text-xl sm:text-2xl font-bold text-gray-900">
+                TAOS CLEAN
               </span>
             </div>
 

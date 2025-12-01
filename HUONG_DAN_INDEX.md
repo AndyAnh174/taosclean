@@ -4,7 +4,7 @@
 
 ### 1️⃣ Đăng ký Google Search Console
 - Truy cập: https://search.google.com/search-console
-- Click "Add Property" → Nhập: `https://taosclean.vn`
+- Click "Add Property" → Nhập: `https://taosclean.vercel.app`
 - Chọn phương thức xác minh (khuyến nghị: HTML tag)
 
 ### 2️⃣ Lấy Google Verification Code
@@ -27,14 +27,14 @@
 
 ### 5️⃣ Request Indexing (Tùy chọn)
 - Vào "URL Inspection"
-- Nhập: `https://taosclean.vn`
+- Nhập: `https://taosclean.vercel.app`
 - Click "Request Indexing"
 
 ## 📊 Kiểm Tra Index Status
 
 ### Cách 1: Google Search
 ```
-site:taosclean.vn
+site:taosclean.vercel.app
 ```
 Nếu thấy kết quả → ✅ Đã được index
 
@@ -51,8 +51,13 @@ npm run ping-google
 
 Hoặc truy cập trực tiếp:
 ```
-https://www.google.com/ping?sitemap=https://taosclean.vn/sitemap.xml
+https://www.google.com/ping?sitemap=https://taosclean.vercel.app/sitemap.xml
 ```
+
+**Lưu ý**: Nếu gặp lỗi 404, đảm bảo:
+- Website đã được deploy lên Vercel
+- Kiểm tra sitemap accessible: https://taosclean.vercel.app/sitemap.xml
+- Chờ vài phút sau khi deploy để sitemap được generate
 
 ## ⏱️ Thời Gian
 
@@ -69,7 +74,7 @@ https://www.google.com/ping?sitemap=https://taosclean.vn/sitemap.xml
 - [ ] Kiểm tra robots.txt (đã có ✓)
 - [ ] Kiểm tra sitemap.xml (đã có ✓)
 - [ ] Ping Google sau khi deploy
-- [ ] Kiểm tra sau 1 tuần: `site:taosclean.vn`
+- [ ] Kiểm tra sau 1 tuần: `site:taosclean.vercel.app`
 
 ## 🆘 Gặp Vấn Đề?
 
