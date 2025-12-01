@@ -11,9 +11,9 @@ export default function StructuredData() {
     "image": `${baseUrl}/assets/banner.jpg`,
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+84-903-116-000",
+      "telephone": "+84-846-123-414",
       "contactType": "customer service",
-      "email": "thanhtp.kn@gmail.com",
+      "email": "thaithanhtien3007@gmail.com",
       "areaServed": {
         "@type": "Country",
         "name": "Vietnam"
@@ -22,7 +22,7 @@ export default function StructuredData() {
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "61/2 Đường số 2, Khu phố 30, Phường Hiệp Bình",
+      "streetAddress": "477/75A Nơ Trang Long, Phường Bình Lợi Trung",
       "addressLocality": "TP Hồ Chí Minh",
       "addressRegion": "Hồ Chí Minh",
       "postalCode": "700000",
@@ -40,12 +40,11 @@ export default function StructuredData() {
     "image": `${baseUrl}/assets/banner.jpg`,
     "@id": baseUrl,
     "url": baseUrl,
-    "telephone": "+84-903-116-000",
-    "email": "thaithanhtien3007@gmail.com",
+    "telephone": "+84-846-123-414",
     "email": "thaithanhtien3007@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "61/2 Đường số 2, Khu phố 30, Phường Hiệp Bình",
+      "streetAddress": "477/75A Nơ Trang Long, Phường Bình Lợi Trung",
       "addressLocality": "TP Hồ Chí Minh",
       "addressRegion": "Hồ Chí Minh",
       "postalCode": "700000",
