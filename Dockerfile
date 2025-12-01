@@ -1,31 +1,32 @@
-FROM node:20-alpine AS base
+FROM node:20-alpine AS deps
 
 WORKDIR /app
-ENV NEXT_TELEMETRY_DISABLED=1
 
-# Install dependencies using pnpm (based on pnpm-lock.yaml)
-FROM base AS deps
+# Cài dependencies bằng pnpm (dựa trên pnpm-lock.yaml)
 COPY package.json pnpm-lock.yaml ./
 RUN corepack enable && pnpm install --frozen-lockfile
 
-# Build the Next.js app
-FROM base AS builder
-COPY . .
-COPY --from=deps /app/node_modules ./node_modules
-RUN corepack enable && pnpm run build
 
-# Production runtime image
-FROM node:20-alpine AS runner
+FROM node:20-alpine AS builder
+
 WORKDIR /app
 
-ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED=1
+# Copy source và node_modules đã cài từ stage deps
+COPY . .
+COPY --from=deps /app/node_modules ./node_modules
 
-# Create non‑root user
-RUN addgroup -g 1001 nodejs \
-  && adduser -S nextjs -u 1001
+# Build Next.js
+RUN corepack enable && pnpm run build
 
-# Copy necessary files from builder
+
+FROM node:20-alpine AS runner
+
+WORKDIR /app
+
+# Tạo user non-root cho an toàn
+RUN addgroup -g 1001 nodejs && adduser -S nextjs -u 1001
+
+# Copy các file cần thiết cho runtime
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/package.json ./package.json
@@ -35,7 +36,6 @@ USER nextjs
 
 EXPOSE 3000
 
-# Run Next.js directly without needing pnpm in the final image
+# Chạy Next.js ở chế độ production (mặc định NODE_ENV trong Next tự xử lý)
 CMD ["node", "node_modules/next/dist/bin/next", "start", "-H", "0.0.0.0", "-p", "3000"]
-
 
