@@ -93,8 +93,8 @@ export default function Hero() {
               </a>
               <span className="text-xs sm:text-sm text-gray-100/90">
                 Hotline hỗ trợ 24/7:{" "}
-                <a href="tel:0903116000" className="font-semibold underline-offset-2 hover:underline">
-                  0903 116 000
+                <a href="tel:0846123414" className="font-semibold underline-offset-2 hover:underline">
+                  0846 123 414
                 </a>
               </span>
             </div>

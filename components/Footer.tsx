@@ -41,19 +41,19 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0 text-gray-800" />
                 <a
-                  href="tel:0903116000"
+                  href="tel:0846123414"
                   className="hover:text-gray-700 transition-colors font-bold"
                 >
-                  Hotline: 0903116000
+                  Hotline: 0846 123 414
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 text-gray-800" />
                 <a
-                  href="mailto:thanhtp.kn@gmail.com"
+                  href="mailto:thaithanhtien3007@gmail.com"
                   className="hover:text-gray-700 transition-colors font-bold"
                 >
-                  Mail: thanhtp.kn@gmail.com
+                  Mail: thaithanhtien3007@gmail.com
                 </a>
               </div>
             </div>

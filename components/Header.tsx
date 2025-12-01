@@ -18,10 +18,10 @@ export default function Header() {
               <span>
                 Hotline:{" "}
                 <a
-                  href="tel:0903116000"
+                  href="tel:0846123414"
                   className="font-semibold text-yellow-600"
                 >
-                  0903116000
+                  0846 123 414
                 </a>
               </span>
             </div>
@@ -30,10 +30,10 @@ export default function Header() {
               <span>
                 Email:{" "}
                 <a
-                  href="mailto:thanhtp.kn@gmail.com"
+                  href="mailto:thaithanhtien3007@gmail.com"
                   className="font-semibold text-yellow-600"
                 >
-                  thanhtp.kn@gmail.com
+                  thaithanhtien3007@gmail.com
                 </a>
               </span>
             </div>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "TAOS CLEAN - Dịch Vụ Vệ Sinh Công Nghiệp Chuyên Nghiệp Tại TP.HCM",
     template: "%s | TAOS CLEAN"
   },
-  description: "TAOS CLEAN chuyên cung cấp dịch vụ vệ sinh công nghiệp, vệ sinh văn phòng, chăm sóc cảnh quan môi trường, vận tải đường bộ, tháo dỡ công trình và tư vấn tài chính tại TP. Hồ Chí Minh. Uy tín - Chất lượng - Chuyên nghiệp. Hotline: 0903116000",
+  description: "TAOS CLEAN chuyên cung cấp dịch vụ vệ sinh công nghiệp, vệ sinh văn phòng, chăm sóc cảnh quan môi trường, vận tải đường bộ, tháo dỡ công trình và tư vấn tài chính tại TP. Hồ Chí Minh. Uy tín - Chất lượng - Chuyên nghiệp. Hotline: 0846 123 414",
   keywords: [
     "vệ sinh công nghiệp",
     "vệ sinh văn phòng",

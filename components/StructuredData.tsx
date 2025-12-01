@@ -29,7 +29,7 @@ export default function StructuredData() {
       "addressCountry": "VN"
     },
     "sameAs": [
-      "https://facebook.com/taosclean"
+      "https://www.facebook.com/taosclean?rdid=bK3BIFsBJkJTDp2O&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BY1Rk819T%2F#"
     ]
   };
 
@@ -41,7 +41,8 @@ export default function StructuredData() {
     "@id": baseUrl,
     "url": baseUrl,
     "telephone": "+84-903-116-000",
-    "email": "thanhtp.kn@gmail.com",
+    "email": "thaithanhtien3007@gmail.com",
+    "email": "thaithanhtien3007@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "61/2 Đường số 2, Khu phố 30, Phường Hiệp Bình",
